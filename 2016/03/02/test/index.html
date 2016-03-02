@@ -9,7 +9,7 @@
         <link rel="alternate" type="application/rss+xml" title="xuejianbest" href="/atom.xml">
         <link rel="canonical" href="http://guolinn.com/">
 
-        <title>Archives: 2016/3 | xuejianbest&#39;s blog</title>
+        <title>test | xuejianbest&#39;s blog</title>
         <meta name="description" content="{{meta_description}}">
 
         <link href="//libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     </head>
     
-		<body class="home-template">
+		<body class="post-template">
 	
 
         <header id="header">
@@ -46,35 +46,55 @@
 
         <main id="content">
         
-<section id="{{id}}" class="{{post_class}}">
-  <h3 class="post-title">
-  <a href="/2016/03/02/test/">test</a>
-  
-  <span class="separator"> &middot; </span>
-  
-  March 2, 2016
-  
-  
-  </h3>
-</section>
 
-<section id="{{id}}" class="{{post_class}}">
-  <h3 class="post-title">
-  <a href="/2016/03/02/hello-world/">Hello World</a>
-  
-  <span class="separator"> &middot; </span>
+<article class="post">
   
   March 2, 2016
   
-  
-  </h3>
-</section>
+
+  <h1 class="post-title">test</h1>
+  <section class="post-content article-entry">
+    <p>校验位算法：<br>（1）对前17位数字加权求和得到S<br>         1-17位数字的权数分别为： 7 9 10 5 8 4 2 1 6 3 7 9 10 5 8 4 2<br>（2）S 除以11求余数得到Y<br>         Y = mod(S, 11)<br>（3）用Y值查表得到校验码<br>Y    0    1    2    3    4    5    6    7    8    9    10<br>校验码    1    0    X    9    8    7    6    5    4    3    2</p>
+<p>身份证号码构成，18位从左到右：<br>六位数字地区码：省省市市县县<br>八位数字生日码：YYYYMMDD<br>三位数字顺序码：同地区年月日出生的人按顺序编码。男分配奇数，女偶数。<br>一位数字校验码</p>
+
+  </section>
+  <footer class="post-footer">
+    <!--
+    <section class="author">
+      <h4>xuejianbest</h4>
+      <p></p>
+    </section>
+    -->
+  </footer>
+</article>
 
 <nav class="pagination" role="pagination">
-  
-  <span class="page-number">Page 1 of 1</span>
-  
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2016/03/02/hello-world/">
+        <!--Hello World--> next →
+    </a>
+    
 </nav>
+
+<!-- Begin Comments Code -->
+<div id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'guolinn'; // required: replace example with your shortname
+      var disqus_identifier = '';
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+<!-- End Comments Code -->
+
 
         </main>
         <footer id="footer">
