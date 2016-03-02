@@ -9,7 +9,7 @@
         <link rel="alternate" type="application/rss+xml" title="xuejianbest" href="/atom.xml">
         <link rel="canonical" href="http://guolinn.com/">
 
-        <title>test | xuejianbest&#39;s blog</title>
+        <title>身份证号码校验 | xuejianbest&#39;s blog</title>
         <meta name="description" content="{{meta_description}}">
 
         <link href="//libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
   March 2, 2016
   
 
-  <h1 class="post-title">test</h1>
+  <h1 class="post-title">身份证号码校验</h1>
   <section class="post-content article-entry">
     <p>校验位算法：<br>（1）对前17位数字加权求和得到S<br>         1-17位数字的权数分别为： 7 9 10 5 8 4 2 1 6 3 7 9 10 5 8 4 2<br>（2）S 除以11求余数得到Y<br>         Y = mod(S, 11)<br>（3）用Y值查表得到校验码<br>Y    0    1    2    3    4    5    6    7    8    9    10<br>校验码    1    0    X    9    8    7    6    5    4    3    2</p>
 <p>身份证号码构成，18位从左到右：<br>六位数字地区码：省省市市县县<br>八位数字生日码：YYYYMMDD<br>三位数字顺序码：同地区年月日出生的人按顺序编码。男分配奇数，女偶数。<br>一位数字校验码</p>
